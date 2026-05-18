@@ -1,0 +1,61 @@
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/decorater')
+def home():
+    return ''' <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculo</title>
+</head>
+<body>
+    <h1>Curriculo</h1>
+
+    <h2>Informações Pessuais</h2>
+    <ul>
+        <li><strong>Nome:</strong> Maria Cecilia Guerin</li>
+        <li><strong>Email:</strong> 12501093@aluno.cotemig.com.br</li>
+        <li><strong>Telefone:</strong> (31) 99397-0204</li>
+    </ul>
+
+
+    <h2>Soft Skils</h2>
+    <ul>
+        <li><strong>Soft Skils que possuo:</strong> Comunicação eficaz; Trabalho em equipe; Organização e gestão do tempo; Resiliência e adaptabilidade; Proatividade na resolução de problemas.</li>
+        <li><strong>Soft Skils que desejo desenvolver:</strong> Liderança e gestão de pessoas; Capacidade de negociação; Pensamento e adaptabilidade; Inteligencia emocional em ambientes de alta pressão.</li>
+    </ul>
+
+    <h2>Habilidades</h2>
+    <ul>
+        <li><strong>1-</strong> Pacote Office</li>
+        <li><strong>2-</strong> Noções de HTML e C#</li>
+        <li><strong>3-</strong> Operar os sistemas operacionais Windows e Linux</li>
+        <li><strong>4-</strong> Canva</li>
+        <li><strong>5-</strong> Python</li>
+        <li><strong>6-</strong> MySQL</li>
+    </ul>
+
+    <h2>Qualifiicações</h2>
+    <ul>
+        <li><strong>2024- Destemidas-Mulheres em STEM:</strong> certificado</li>
+        <li><strong>2025- Cisco: Fundamentos do Hardware do computador:</strong> certificado</li>
+        <li><strong>2026- Code Club:</strong> certificado</li>
+        <li><strong>2026- Introdução a Cibersegurança:</strong> certificado</li>
+        
+    </ul>
+
+    <h2>Indiomas</h2>
+    <ul>
+        <li><strong>Ingles:</strong> Intermediario</li>
+        
+    </ul>
+
+</body>
+</html>
+'''
+
+if __name__ == '__main__':
+    app.run(debug=True)
