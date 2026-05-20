@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 4</title>
+</head>
+<body>
+    <h1>Exercício 4 - Lista de Alunos</h1>
+    <ul>
+    {% for aluno in alunos %}
+        <li>{{ loop.index }} - {{ aluno }}</li>
+    {% endfor %}
+    </ul>
+    <br><a href="/">Voltar</a>
+</body>
+</html>

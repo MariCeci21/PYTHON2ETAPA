@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 5</title>
+</head>
+<body>
+    <h1>Exercício 5 - Resultado Final</h1>
+    <p>Nota obtida: {{ nota }}</p>
+    
+    {% if nota >= 7 %}
+        <h2 style="color: green;">Aprovado</h2>
+    {% else %}
+        <h2 style="color: red;">Reprovado</h2>
+    {% endif %}
+    
+    <br><a href="/">Voltar</a>
+</body>
+</html>
